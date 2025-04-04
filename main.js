@@ -8,7 +8,7 @@ async function getADog() {
 document.getElementById("text").addEventListener("keyup", wordcount)
 
 function wordcount() {
-    text = document.getElementById("text").innerText;
+    text = document.getElementById("text").value;
     const textArray = text.split(" ");
     if(textArray.length ) {
         getADog()
